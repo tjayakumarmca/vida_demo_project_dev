@@ -9,7 +9,7 @@ include: "/views/**/*.view.lkml"
 
 datagroup: vida_demo_project01_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "2 hour"
 }
 
 persist_with: vida_demo_project01_default_datagroup
