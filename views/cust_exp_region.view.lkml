@@ -18,7 +18,7 @@ view: cust_exp_region {
 
   dimension: column {
     type: string
-    sql: ${TABLE}."columnn" ;;
+    sql: ${TABLE}."column" ;;
   }
 
   dimension: regionid {
