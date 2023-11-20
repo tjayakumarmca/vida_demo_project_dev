@@ -13,7 +13,7 @@ view: cust_exp_region {
 
   dimension: abbreviation {
     type: string
-    sql: ${TABLE}."abbreviation" ;;
+    sql: ${TABLE}."abbreviationn" ;;
   }
 
   dimension: column {
