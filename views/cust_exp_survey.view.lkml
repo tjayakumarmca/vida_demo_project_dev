@@ -73,6 +73,7 @@ view: cust_exp_survey {
 
   dimension: surveyid {
     type: string
+    primary_key: yes
     sql: ${TABLE}."surveyid" ;;
   }
 

@@ -13,7 +13,8 @@ view: cust_exp_region {
 
   dimension: abbreviation {
     type: string
-    sql: ${TABLE}."abbreviationn" ;;
+    primary_key: yes
+    sql: ${TABLE}."abbreviation" ;;
   }
 
   dimension: column {
@@ -35,7 +36,14 @@ view: cust_exp_region {
     type: string
     sql: ${TABLE}."state" ;;
   }
+
+  dimension: is_priority_region {
+    type: yesno
+    sql:  ${TABLE}."state" IN ('Arizona', 'California', 'New York') ;;
+  }
+
   measure: count {
     type: count
   }
+
 }
