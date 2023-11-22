@@ -25,10 +25,12 @@ persist_with: vida_demo_project01_default_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: cust_exp_region {}
-
 explore: cust_exp_survey {}
 
-explore: cust_exp_user {}
-
-explore: insurance {}
+explore: cust_exp_user {
+  join: cust_exp_region {
+    type: left_outer
+    sql_on: ${cust_exp_user.region} = ${cust_exp_region.abbreviation} ;;
+    relationship: many_to_one
+  }
+}

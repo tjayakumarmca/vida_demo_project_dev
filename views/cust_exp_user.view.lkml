@@ -33,9 +33,16 @@ view: cust_exp_user {
 
   dimension: userid {
     type: string
+    primary_key: yes
     sql: ${TABLE}."userid" ;;
   }
   measure: count {
     type: count
   }
+
+  measure: priority_user_count {
+    type:  count
+    filters: [cust_exp_region.is_priority_region: "yes"]
+  }
+
 }
