@@ -40,7 +40,7 @@ view: cust_exp_user {
     type: count
   }
 
-  measure: priority_user_count {
+  measure: priority_region_user_count {
     type:  count
     filters: [cust_exp_region.is_priority_region: "yes"]
   }
