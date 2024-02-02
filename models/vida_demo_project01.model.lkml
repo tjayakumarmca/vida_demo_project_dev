@@ -3,7 +3,7 @@ connection: "vida-postgre-db-azure"
 
 # include all the views
 include: "/views/**/*.view.lkml"
-include: "/Dashboards/**/*.dashboard.lookml"
+#include: "/Dashboards/**/*.dashboard.lookml"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
