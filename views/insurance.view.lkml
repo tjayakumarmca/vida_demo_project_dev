@@ -61,7 +61,7 @@ view: insurance {
     sql: ${TABLE}."journey" ;;
   }
 
-  dimension: no_of_users {
+  dimension: no_of_userss {
     type: string
     sql: ${TABLE}."no_of_users" ;;
   }
