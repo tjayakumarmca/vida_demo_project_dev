@@ -39,7 +39,7 @@ view: cust_exp_region {
 
   dimension: is_priority_region {
     type: yesno
-    sql:  ${TABLE}."state" IN ('Arizona', 'California', 'Chicago') ;;
+    sql:  ${TABLE}."state" IN ('Arizona', 'California', 'Chicago', 'Seattle') ;;
   }
 
   measure: count {
